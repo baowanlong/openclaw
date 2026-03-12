@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "profiles": {
+    "google:default": {
+      "type": "api_key",
+      "provider": "google",
+      "key": "AIzaSyDkhQpNB3DwgAox_rZlStdCf8tbsZW8ku8"
+    },
+    "minimax-portal:default": {
+      "type": "oauth",
+      "provider": "minimax-portal",
+      "access": "sk-cp-M4rkwVuZa4_XGKNV3WHzkzPZryNIpzCAFXSyBasgazwuUYN-UWiFUrGqtxkAyHLOS18XbX_KSGl_b4U14b3HXN4bfVgK8lgiwRzxukdaSFInq4LnIUIE1sU",
+      "refresh": "2105oMMx6Z0qlLAlCFehzzNzKQsiCVFC8PZU_UWwe0w=",
+      "expires": 1804774423936
+    },
+    "minimax:default": {
+      "type": "api_key",
+      "provider": "minimax",
+      "key": "sk-api-4-arGS-CC2JENDwmNE0P2plQnWibnP7FTRs1OXPzjtm-MfZfIMQNXYJZoEWTntNod-gGuUbam5GNgZFQePvs51QsqW_LcWcVXN_BTGszep1sMSRTzFwwUvQ"
+    },
+    "minimax-cn:default": {
+      "type": "api_key",
+      "provider": "minimax-cn",
+      "key": "sk-api-4-arGS-CC2JENDwmNE0P2plQnWibnP7FTRs1OXPzjtm-MfZfIMQNXYJZoEWTntNod-gGuUbam5GNgZFQePvs51QsqW_LcWcVXN_BTGszep1sMSRTzFwwUvQ"
+    }
+  },
+  "usageStats": {
+    "google:default": {
+      "errorCount": 4,
+      "lastUsed": 1773235067646,
+      "lastFailureAt": 1773246448192,
+      "failureCounts": {
+        "rate_limit": 4
+      },
+      "cooldownUntil": 1773250048192
+    },
+    "minimax-portal:default": {
+      "errorCount": 2,
+      "lastUsed": 1773236867403,
+      "failureCounts": {
+        "rate_limit": 2
+      },
+      "lastFailureAt": 1773238289052,
+      "cooldownUntil": 1773238589052
+    },
+    "minimax-cn:default": {
+      "errorCount": 0,
+      "lastUsed": 1773243267993
+    }
+  }
+}
