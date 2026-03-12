@@ -5,5 +5,5 @@
 # Add tasks below when you want the agent to check something periodically.
 
 ## Auto Backup Task
-- Check if workspace files have changed (git status)
+- Check if md files or config files (*.md, *.yaml, *.yml, *.json, *.toml, *.ini, *.conf, *.config) have changed
 - If there are changes, commit and push to GitHub (baowanlong/openclaw)
