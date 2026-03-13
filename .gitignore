@@ -1,0 +1,11 @@
+# 敏感信息
+.github_token
+*.token
+
+# 临时文件
+*.tmp
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
