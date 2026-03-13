@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.8",
+    "lastTouchedAt": "2026-03-13T10:26:53.364Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-11T09:12:13.521Z",
+    "lastRunVersion": "2026.3.8",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "apiKey": "sk-api-4-arGS-CC2JENDwmNE0P2plQnWibnP7FTRs1OXPzjtm-MfZfIMQNXYJZoEWTntNod-gGuUbam5GNgZFQePvs51QsqW_LcWcVXN_BTGszep1sMSRTzFwwUvQ",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax M2.5"
+          },
+          {
+            "id": "MiniMax-M2.5-highspeed",
+            "name": "MiniMax M2.5 Highspeed"
+          },
+          {
+            "id": "MiniMax-M2.5-Lightning",
+            "name": "MiniMax M2.5 Lightning"
+          },
+          {
+            "id": "MiniMax-M2.1",
+            "name": "MiniMax M2.1"
+          },
+          {
+            "id": "MiniMax-M2.1-lightning",
+            "name": "MiniMax M2.1 Lightning"
+          },
+          {
+            "id": "MiniMax-M2",
+            "name": "MiniMax M2"
+          }
+        ]
+      },
+      "qwen": {
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "sk-8a7762e0ec814da8989cb82a7f16d687",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3.5-plus",
+            "name": "Qwen3.5 Plus"
+          },
+          {
+            "id": "qwen-max",
+            "name": "Qwen Max"
+          },
+          {
+            "id": "qwen-plus",
+            "name": "Qwen Plus"
+          },
+          {
+            "id": "qwen-turbo",
+            "name": "Qwen Turbo"
+          },
+          {
+            "id": "qwen3-coder-plus",
+            "name": "Qwen3 Coder Plus"
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax M2.5"
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "Kimi K2.5"
+          },
+          {
+            "id": "glm-5",
+            "name": "GLM-5"
+          },
+          {
+            "id": "glm-4.7",
+            "name": "GLM-4.7"
+          },
+          {
+            "id": "deepseek-v3.2",
+            "name": "DeepSeek V3.2"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "qwen/qwen3.5-plus"
+      },
+      "workspace": "/root/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "profile": "full"
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "qqbot": {
+      "enabled": true,
+      "appId": "1903398986",
+      "clientSecret": "hP8rbM7tfSF3rgVLC3vngZTNIEA7420z"
+    }
+  },
+  "gateway": {
+    "port": 33865,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "basePath": "/flneje",
+      "allowedOrigins": [
+        "http://43.167.244.92:33865"
+      ],
+      "allowInsecureAuth": true,
+      "dangerouslyDisableDeviceAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "2d75fe055afbe3d5c59af9ee1efa98a11c1a7f445ebea4c0"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": true
+      },
+      "qqbot": {
+        "enabled": true
+      },
+      "ddingtalk": {
+        "enabled": true
+      },
+      "wecom": {
+        "enabled": true
+      },
+      "adp-openclaw": {
+        "enabled": true
+      },
+      "skillhub": {
+        "enabled": true,
+        "config": {
+          "primaryCli": "skillhub",
+          "fallbackCli": "clawhub",
+          "primaryLabel": "cn-optimized",
+          "fallbackLabel": "public-registry"
+        }
+      },
+      "qwen-portal-auth": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "qqbot": {
+        "source": "npm",
+        "spec": "@sliverp/qqbot",
+        "installPath": "/root/.openclaw/extensions/qqbot",
+        "version": "1.5.4",
+        "resolvedName": "@sliverp/qqbot",
+        "resolvedVersion": "1.5.4",
+        "resolvedSpec": "@sliverp/qqbot@1.5.4",
+        "integrity": "sha512-O9T2mLVeWFUi5Q5TuVfWk/Bmrc1ZDjOfjNviKkHX93xk7+I0wndRY2ibrEvlYrINYVHGTh9uwodhTCcOj0AX7g==",
+        "shasum": "0230686834f45c850348cf5628e79c0cad0b5ee0",
+        "resolvedAt": "2026-03-11T09:13:06.623Z",
+        "installedAt": "2026-03-11T09:14:00.691Z"
+      },
+      "ddingtalk": {
+        "source": "npm",
+        "spec": "@largezhou/ddingtalk",
+        "installPath": "/root/.openclaw/extensions/ddingtalk",
+        "version": "1.4.0",
+        "resolvedName": "@largezhou/ddingtalk",
+        "resolvedVersion": "1.4.0",
+        "resolvedSpec": "@largezhou/ddingtalk@1.4.0",
+        "integrity": "sha512-LIdhoXqL7+7RyRDriLwPjBF1Ia8ntynndnjLpBu7Om3uSTnkIPsYkxLDY0cpcl03y+zPa5hDq3l1PWDrDOxafg==",
+        "shasum": "3bef86cb0be1d3716852cb4475363201980e4eae",
+        "resolvedAt": "2026-03-11T09:14:08.062Z",
+        "installedAt": "2026-03-11T09:14:19.419Z"
+      },
+      "wecom": {
+        "source": "npm",
+        "spec": "@mocrane/wecom",
+        "installPath": "/root/.openclaw/extensions/wecom",
+        "version": "2026.3.9",
+        "resolvedName": "@mocrane/wecom",
+        "resolvedVersion": "2026.3.9",
+        "resolvedSpec": "@mocrane/wecom@2026.3.9",
+        "integrity": "sha512-ZUn4UWIRoc877LozznbCHiQf451QmpQdP2iFGuwWzirNwvT6Iq7eobP9+wCW+gqvBUZBUDQr3OForhFD11XXnw==",
+        "shasum": "1f3654fa5d0e6e2069e880b7111bab80855d8343",
+        "resolvedAt": "2026-03-11T09:14:27.371Z",
+        "installedAt": "2026-03-11T09:14:35.335Z"
+      },
+      "adp-openclaw": {
+        "source": "npm",
+        "spec": "adp-openclaw",
+        "installPath": "/root/.openclaw/extensions/adp-openclaw",
+        "version": "0.0.64",
+        "resolvedName": "adp-openclaw",
+        "resolvedVersion": "0.0.64",
+        "resolvedSpec": "adp-openclaw@0.0.64",
+        "integrity": "sha512-PEChRs865kBY+Gy6iJ2EPkTb7hJIhEDX54Uqx3PNoueCDtHsUqxKR05dkxAlYX/Kz06x2JDpsLKeT615pzoNvQ==",
+        "shasum": "d91abf55c9dbc942c2eda81b0c9027a257a7ea10",
+        "resolvedAt": "2026-03-11T09:14:43.760Z",
+        "installedAt": "2026-03-11T09:14:45.103Z"
+      }
+    }
+  }
+}
