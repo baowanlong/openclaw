@@ -89,13 +89,40 @@
             "name": "DeepSeek V3.2"
           }
         ]
+      },
+      "siliconflow": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "apiKey": "sk-vyucvyczacgmzjkqnpuqspdeiozkgjdfuafubayczsmntjrv",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-ai/DeepSeek-V3",
+            "name": "DeepSeek V3"
+          },
+          {
+            "id": "deepseek-ai/DeepSeek-R1",
+            "name": "DeepSeek R1"
+          },
+          {
+            "id": "deepseek-ai/DeepSeek-V2.5",
+            "name": "DeepSeek V2.5"
+          },
+          {
+            "id": "Qwen/Qwen2.5-72B-Instruct",
+            "name": "Qwen2.5 72B"
+          },
+          {
+            "id": "THUDM/glm-4-9b-chat",
+            "name": "GLM-4 9B"
+          }
+        ]
       }
     }
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "qwen/qwen3.5-plus"
+        "primary": "siliconflow/deepseek-ai/DeepSeek-V3"
       },
       "workspace": "/root/.openclaw/workspace",
       "compaction": {
